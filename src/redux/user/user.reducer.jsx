@@ -4,7 +4,7 @@ const INITIAL_STATE = {
     currentUser: null
 }
 
-const useReducer = (state = INITIAL_STATE, action) => {
+const userReducer = (state = INITIAL_STATE, action) => {
     switch(action.type){
         case UserActionTypes.SET_CURRENT_USER:
             return {
@@ -16,4 +16,4 @@ const useReducer = (state = INITIAL_STATE, action) => {
     }
 }
 
-export default useReducer
+export default userReducer
